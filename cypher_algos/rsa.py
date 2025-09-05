@@ -10,7 +10,7 @@ def rsa_encrypt(plaintext, public_key):
     return ciphertext
 
 key = RSA.generate(1024)
-public_key_obj = key.public_key()
+public_key_obj = key.publickey()  
 phi_n = (key.p - 1) * (key.q - 1)
 
 print("Generated a 1024-bit key pair.")
